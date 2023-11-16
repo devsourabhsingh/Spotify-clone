@@ -10,12 +10,12 @@ const MusicLibrary = ({
 }) => {
   return (
     <>
-      <div className={`new-library ${newWidth ? "width-5" : ""}`}>
+      <div className={`new-library ${newWidth ? "width-5 height-Music" : ""}`}>
         <div className=" container  new-aline-shadow  top-head pt-4">
           <div className="d-flex justify-content-between align-items-center">
             <div className="d-flex align-items-basel">
               <button
-                className="new-collection"
+                className="new-collection mx-2"
                 style={{
                   border: "none",
                   backgroundColor: "transparent",
@@ -58,7 +58,11 @@ const MusicLibrary = ({
             </div>
           )}
         </div>
-        <div className="down-scroll container pt-3">
+        <div
+          className={`down-scroll container pt-3 ${
+            newWidth ? " down-scroll-none" : ""
+          }`}
+        >
           {newWidth ? (
             ""
           ) : (

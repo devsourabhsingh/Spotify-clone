@@ -26,7 +26,11 @@
 } */
 .down-scroll {
   overflow: auto;
-  height: 29rem;
+  height: 26rem;
+}
+.down-scroll-none {
+  overflow: hidden;
+  height: 27rem;
 }
 .new-collection button:hover {
   color: white;
@@ -40,6 +44,7 @@ body {
 .new-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   padding-top: 1rem;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -103,14 +108,14 @@ body {
 .main-bar {
   grid-column: 2 / 3;
   grid-row: 1;
-  width: 74rem;
+  width: 63rem;
   border: 1px solid rgb(25, 25, 26);
   background-color: rgb(25, 25, 26);
   border-radius: 10px;
 }
 .main-child-bar {
   overflow: auto;
-  height: 33rem;
+  height: 25rem;
 }
 .new-image {
   width: 13.5rem;
@@ -179,7 +184,7 @@ ul li:hover {
 
 .new-player {
   background-color: black;
-  height: 6.8rem;
+  height: 96px;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 1rem;
@@ -206,8 +211,13 @@ ul li:hover {
 .width-5 {
   width: 5rem !important;
 }
+.height-Music {
+  height: 34rem;
+  overflow-x: hidden !important;
+}
 .width-main {
-  width: 99rem !important;
+  width: 87rem !important;
+  height: 40rem !important;
 }
 .axis-hide {
   overflow-x: hidden;

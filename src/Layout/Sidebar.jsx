@@ -4,7 +4,7 @@ const Sidebar = ({ newWidth, onClick }) => {
   return (
     <>
       <div className={`side-bar ${newWidth ? "width-5" : ""}`}>
-        <div className="container  gap-4 pt-2 mx-auto">
+        <div className="container  gap-4 pt-2 mx-2">
           <button
             className="side-btn-border d-flex align-items-baseline gap-4"
             onClick={onClick}

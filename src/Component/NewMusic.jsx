@@ -150,7 +150,9 @@ const NewMusic = () => {
       <div className="new-music-bac">
         <div className="new-wrapper">
           {/* first and second row bar */}
-          <div className={`side-second-bar ${newWidth ? "axis-hide" : ""}`}>
+          <div
+            className={`side-second-bar ${newWidth ? "width-5 axis-hide" : ""}`}
+          >
             <Sidebar newWidth={newWidth} onClick={handleSideBar} />
             <MusicLibrary
               newWidth={newWidth}
